@@ -1,0 +1,28 @@
+.mdui-drawer {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+body {
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: lightgrey;
+    background-image: url(https://s2.ax1x.com/2019/08/07/e5SLaF.jpg);
+}
+
+.mdui-card {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#full-page {
+    height: 100%;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    transition: 0.3s;
+}

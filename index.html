@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - MDUI测试</title>
+    <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
+    <link rel="stylesheet" href="styles/addition.css">
+</head>
+
+<body class="mdui-theme-primary-indigo mdui-theme-accent-red mdui-drawer-body-left">
+    <div id="mdui-container top">
+        <div class="mdui-appbar">
+            <!--工具栏：logo、几个按钮-->
+            <div class="mdui-toolbar mdui-color-theme">
+                <!--抽屉式折叠栏-->  
+                <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer', covered: false}"><i class="mdui-icon material-icons">menu</i></button>
+
+                <!--logo-->
+                <a href="javascript:;" class="mdui-typo-headline">MDUI测试</a>
+
+                <!--返回首页按钮-->
+                <a href="index.html" class="mdui-typo-title">首页</a>
+                <div class="mdui-toolbar-spacer"></div>
+
+                <!--菜单按钮-->
+                <a href="javascript:;" class="mdui-btn" mdui-menu="{target: '#about-menu', covered: false}"><i class="mdui-icon material-icons">info</i>关于</a>
+                <ul class="mdui-menu mdui-text-color-theme" id="about-menu">
+                        <li class="mdui-menu-item">
+                            <a href="about/"><i class="mdui-icon material-icons">info_outline</i>写在开始之前</a>
+                        </li>
+                        <li class="mdui-menu-item">
+                            <a href="https://socialzxy.github.io"><i class="mdui-icon material-icons">account_circle</i>作者</a>
+                        </li>
+                </ul>
+
+                <a href="javascript:;" class="mdui-btn" mdui-menu="{target: '#link-menu', covered: false}"><i class="mdui-icon material-icons">link</i>链接</a>
+                <ul class="mdui-menu mdui-text-color-theme" id="link-menu">
+                    <li class="mdui-menu-item">
+                        <a href="https://socialzxy.github.io"><i class="mdui-icon material-icons">account_circle</i>Socialist_Zhao</a>
+                    </li>
+                    <li class="mdui-menu-item">
+                        <a href="https://0and1story.github.io"><i class="mdui-icon material-icons">account_circle</i>0And1Story</a>
+                    </li>
+                    <li class="mdui-menu-item">
+                        <a href="https://www.mdui.org/"><i class="mdui-icon material-icons">share</i>MDUI</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!--抽屉栏，首页不需要-->
+    <div class="mc-drawer mdui-drawer" id="left-drawer">
+        <div class="mdui-list">
+            <li class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-content">目录</div>
+            </li>
+            <a href="#introduction">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content"><i class="mdui-icon material-icons">info</i> 简介</div>
+                </li>
+            </a>
+            <a href="#test">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content"><i class="mdui-icon material-icons">check</i> 测试</div>
+                </li>
+            </a>
+        </div>
+    </div>
+    <div id="title" style="margin-top: 200px; margin-bottom: 200px;">
+        <div class="mdui-valign">
+            <div href="javascript:;" class="mdui-center mdui-typo-display-2 mdui-text-color-white-text" style="text-decoration: none;">MDUI测试</div>
+        </div>
+    </div>
+    <div class="mdui-container-fluid" style="margin-bottom: 200px;">
+        <div class="mdui-col-md-7 mdui-col-offset-md-1" style="margin-bottom: 10px;">
+            <div class="mdui-card mdui-hoverable" style="padding: 15px;" id="introduction">
+                <div class="mdui-card-primary">
+                    <div class="mdui-row">
+                        <span class="mdui-float-left mdui-card-primary-title" style="color: black; text-decoration: none;">简介</span>
+                    </div>
+                </div>
+                <!--div class="mdui-card-media mdui-hoverable" style="overflow: hidden;">
+                    <img src="https://img.xjh.me/desktop/bg/acg/63069334_p0.jpg" id="intro-img" style="transition: 0.5s;">
+                    <style>#intro-img:hover {transform: scale(1.2);}</style>
+                </div-->
+                <div class="mdui-card-content mdui-typo-body-1">
+                    <p>作者用这个页面来测试MDUI，旧的博客可能会在测试结束以后退役。</p>
+                    <p>欢迎在issues中吐槽</p>
+                    <p>以下是一些预告：</p>
+                    <ul>
+                        <li>会采用MDUI编写</li>
+                        <li>（可能）会使用Gitalk作为评论系统</li>
+                        <li>背景和界面大概会和这个一样（首页）</li>
+                        <li>其他页面也无显著不同，只是会在左边增加一个可以关掉的目录</li>
+                        <li>旧的博客会被作为纪念，改造为“宇宙中转站”。不要问我这是什么，问<a href="https://henrywch.github.io/Solar-CN/">这个网站的站长</a>去</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="mdui-card mdui-hoverable" style="padding: 15px;" id="test">
+                    <div class="mdui-card-primary">
+                        <div class="mdui-row">
+                            <span class="mdui-float-left mdui-card-primary-title" style="color: black; text-decoration: none;">下面会进行一些测试（其实很多东西在本页已经测试过了）</span>
+                        </div>
+                    </div>
+                    <!--div class="mdui-card-media mdui-hoverable" style="overflow: hidden;">
+                        <img src="https://img.xjh.me/desktop/bg/acg/63069334_p0.jpg" id="intro-img" style="transition: 0.5s;">
+                        <style>#intro-img:hover {transform: scale(1.2);}</style>
+                    </div-->
+                    <div class="mdui-card-content mdui-typo-body-1">
+                        <ol>
+                        <li>
+                            带有涟漪动画的按钮：<button class="mdui-btn mdui-ripple mdui-color-blue">button</button>
+                        </li>
+                        <li>
+                            浮动按钮：见右下角，点击会传送到顶部
+                            <a href="#"><button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed"><i class="mdui-icon material-icons">keyboard_arrow_up</i></button></a>
+                        </li>
+                        <li>
+                            可展开面板：
+                            <div class="mdui-panel" mdui-panel>
+                                <div class="mdui-panel-item">
+                                    <div class="mdui-panel-item-header">点击展开</div>
+                                    <div class="mdui-panel-item-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quod architecto, mollitia iste, inventore suscipit impedit at ratione hic nulla sapiente sit nam amet! Sapiente, libero? Blanditiis id odio nisi.
+                                            Delectus placeat harum facere laboriosam eveniet velit inventore obcaecati repudiandae, quae tenetur nisi, totam dolorum, necessitatibus unde quisquam praesentium earum? Recusandae cum minima veritatis quae quis consectetur odio tempora quisquam.
+                                            Repudiandae atque dolor obcaecati fugiat voluptatem id? Exercitationem aliquid quos aspernatur praesentium, nostrum dolorum qui, debitis quidem fugiat velit possimus numquam, animi unde necessitatibus natus sequi odio aperiam? Quo, assumenda.
+                                            Magni, mollitia! Ducimus, nihil quisquam deserunt soluta asperiores voluptas doloremque quasi magni quidem eligendi id accusamus repudiandae nostrum excepturi eius fugiat commodi exercitationem animi minus doloribus deleniti quo ipsum? Inventore!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            表格：
+                            <div class="mdui-table-fluid">
+                                <table class="mdui-table mdui-table-hoverable">
+                                    <thead>
+                                        <tr>
+                                            <th>表头</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            图片：
+                            <div class="mdui-card-media mdui-hoverable" style="overflow: hidden;">
+                                <img src="https://s2.ax1x.com/2019/08/17/muvp5D.jpg" id="intro-img" style="transition: 0.5s;">
+                                <style>#intro-img:hover {transform: scale(1.1);}</style>
+                            </div>
+                        </li>
+                    </ol>
+                    </div>
+                </div>
+        </div>
+
+        <div class="mdui-col-md-3">
+            <div class="mdui-card mdui-hoverable" style="padding: 15px;">
+                <img class="mdui-center mdui-img-circle" src="https://s2.ax1x.com/2019/07/27/eKvIxO.th.png" width="50%">
+                <div id="title" style="margin-top: 10px; margin-bottom: 10px; word-break:break-all; word-wrap:break-word;">
+                    <div class="mdui-valign">
+                        <div class="mdui-center mdui-typo-headline">Socialist_Zhao</div>
+                    </div>
+                </div>
+                <div id="title" style="margin-top: 10px; margin-bottom: 10px; word-break:break-all; word-wrap:break-word;">
+                    <div class="mdui-valign">
+                        <div class="mdui-center mdui-typo-subheading">我好菜啊</div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="mdui-card mdui-hoverable" style="padding: 15px;">
+                <div class="mdui-typo-title-opacity mdui-text-color-theme-accent"><i class="mdui-icon material-icons">lightbulb_outline</i>公告</div>
+                <div class="mdui-card-content mdui-typo-body-1">
+                    目前的这个页面只是MDUI的测试页。所以作者就只是乱糊了一下，有一点丑，不喜勿喷。
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
+    <script src="drawer.js"></script>
+</body>
+
+</html>
