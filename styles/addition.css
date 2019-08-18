@@ -6,6 +6,7 @@ body {
     background-size: cover;
     background-color: lightgrey;
     background-image: url(https://s2.ax1x.com/2019/08/07/e5SLaF.jpg);
+    scroll-behavior: smooth;
 }
 
 .mdui-card {
@@ -20,9 +21,4 @@ a {
     color: blue;
     font-weight: bold;
     text-decoration: none;
-}
-
-a:hover {
-    color: red;
-    transition: 0.3s;
 }

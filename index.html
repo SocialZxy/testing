@@ -6,6 +6,7 @@
     <title>首页 - MDUI测试</title>
     <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/css/mdui.min.css">
     <link rel="stylesheet" href="styles/addition.css">
+    <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/monokai-sublime.css">
 </head>
 
 <body class="mdui-theme-primary-indigo mdui-theme-accent-red mdui-drawer-body-left">
@@ -163,6 +164,14 @@
                                 <style>#intro-img:hover {transform: scale(1.1);}</style>
                             </div>
                         </li>
+                        <li>
+                            代码：
+                            <pre><code style="font-family: consolas;">#include&lt;iostream&gt; //我太弱了
+using namespace std;
+int main() {
+    cout &lt;&lt; "hello world" &lt;&lt; endl;
+}</code></pre>
+                        </li>
                     </ol>
                     </div>
                 </div>
@@ -190,10 +199,19 @@
                 </div>
             </div>
         </div>
-        <a href="#"><button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed"><i class="mdui-icon material-icons">keyboard_arrow_up</i></button></a>
+        <button class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed" id="back"><i class="mdui-icon material-icons">keyboard_arrow_up</i></button>
+        
     </div>
+    <script>
+        back.onclick = function() {
+            document.body.scrollTop=0;
+            let top=document.getElementsByClassName('mdui-appbar');
+            top.scrollIntoView();
+        }
+    </script>
     <script src="https://cdnjs.loli.net/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
-    <script src="drawer.js"></script>
+	<script src="https://highlightjs.org/static/highlight.site.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 
 </html>
